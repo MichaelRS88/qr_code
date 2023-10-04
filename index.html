@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-mode.css"> <!-- Add a separate CSS file for dark mode styles -->
+
+    <title>QR Code Component</title>
+</head>
+<div class="card">
+    <div class="dark-mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="dark-mode-label"><a>Dark Mode</a></span>
+    </div>
+
+    <img src="images/image-qr-code.png" alt="qr-code" class="card_image"/>
+    <h3 class="title">Improve your front-end skills building projects</h3>
+    <p>
+        Scan this QR code to visit Frontend Mentor and take your coding to the next level
+    </p>
+</div>
+
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        darkModeToggle.addEventListener("change", () => {
+            body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
